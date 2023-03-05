@@ -1,31 +1,33 @@
+// Follow along with the examples here
+// function doNothing() { }
+// function sayHello() {
+//   console.log("Hello");
+// }
+// sayHello();
+// function sayHelloToGuadalupe() {
+//   console.log("Hello, Guadalupe");
+// }
+// sayHelloToGuadalupe();
+// function sayHelloTo(someone) {
+//   console.log(`Hello ${someone}`);
+// }
+// sayHelloTo("Ivan");
+// function sayGreetingsTo(greetings, someone) {
+//   console.log(`${greetings} ${someone}`);
+// }
+// sayGreetingsTo("Greetings", "Ivan");
+// sayGreetingsTo("Ivan", "Greetings");
 
-function shout(myString) {
-  return myString.toUpperCase();
-}
+// function add(x, y) {
+//   // return 
+//   x + y;
+// }
+// console.log(add(1, 2));
 
-function whisper(myString) {
-  return myString.toLowerCase();
+function say(greeting, firstName) {
+  console.log("I was called first!");
+  return `${greeting}, ${firstName}!`;
+  console.log("I was called last!");
 }
+console.log(say("Howdy", "partner"));
 
-function logShout(myString) {
-  console.log(myString.toUpperCase());
-}
-
-function logWhisper(myString) {
-  console.log(myString.toLowerCase());
-}
-
-function sayHiToHeadphonedRoommate(myString) {
-  const lowerstring = "I can\'t hear you!";
-  const upperstring = "YES INDEED!";
-  const dinnerstring = "I would love to!";
-  if (myString == myString.toLowerCase()) {
-    return lowerstring
-  }
-  else if (myString == myString.toUpperCase()) {
-    return upperstring;
-  }
-  else if (myString == "Let's have dinner together!") {
-    return dinnerstring
-  }
-}
